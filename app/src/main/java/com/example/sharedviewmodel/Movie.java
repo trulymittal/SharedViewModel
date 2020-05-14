@@ -3,9 +3,9 @@ package com.example.sharedviewmodel;
 public class Movie {
 
     private String name;
-    private String rating;
+    private double rating;
 
-    public Movie(String name, String rating) {
+    public Movie(String name, double rating) {
         this.name = name;
         this.rating = rating;
     }
@@ -18,11 +18,11 @@ public class Movie {
         this.name = name;
     }
 
-    public String getRating() {
+    public double getRating() {
         return rating;
     }
 
-    public void setRating(String rating) {
+    public void setRating(double rating) {
         this.rating = rating;
     }
 
@@ -30,7 +30,7 @@ public class Movie {
     public String toString() {
         return "Movie{" +
                 "name='" + name + '\'' +
-                ", rating='" + rating + '\'' +
+                ", rating=" + rating +
                 '}';
     }
 }
